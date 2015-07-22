@@ -10,7 +10,7 @@ public class AnagramGenClient {
 	public static void main(String[] args) throws IOException {
 		String inputFile = "C:\\input1.txt";
 		List<String> words = populateWordsList(inputFile);
-		Collection<String> anagramsList = AnagramGenerator.getAnagrams(words);
+		List<String> anagramsList = AnagramGenerator.getAnagrams(words);
 
 		for (String string : anagramsList) {
 			System.out.println(string);
